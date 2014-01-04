@@ -1,0 +1,23 @@
+// Your custom theme
+@import "overrides/_variables.less";
+
+// Partials
+@import "partials/_login.less";
+@import "partials/_home.less";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea, button {
+  &:focus {outline: none;}
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+}
