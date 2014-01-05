@@ -5,6 +5,7 @@ App = angular.module 'app', [
   'ngCookies'
   'ngResource'
   'ngRoute'
+  'ngAnimate'
   'app.controllers'
   'app.directives'
   'app.filters'

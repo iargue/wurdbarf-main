@@ -34,16 +34,24 @@ angular.module('app.controllers', [])
       return ''
 ])
 
-.controller('MyCtrl1', [
-  '$scope'
+.controller('LoginCtrl', ['$scope', '$location', ($scope, $location) ->
+  $scope.login = () ->
+    $location.path '/home'
 
-($scope) ->
-  $scope.onePlusOne = 2
+  $scope.getGreeting = () ->
+    greetings = [
+      'The worst social network ever!'
+      'The first ever NSA data mining network.'
+    ]
+
+    greetings[Math.floor(Math.random()*greetings.length)]
 ])
 
-.controller('MyCtrl2', [
-  '$scope'
+.controller('HomeCtrl', ['$scope', '$location', ($scope, $location) ->
 
-($scope) ->
-  $scope
 ])
+
+
+
+
+

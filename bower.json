@@ -19,7 +19,8 @@
     "angular-resource": "1.2.5",
     "angular-route": "1.2.5",
     "angular-cookies": "1.2.5",
-    "angular-mocks": "1.2.5"
+    "angular-mocks": "1.2.5",
+    "angular-animate": "~1.2.7"
   },
   "overrides": {
     "bootstrap-less": {
@@ -30,5 +31,8 @@
     "angular-mocks": {
       "main": "README.md"
     }
+  },
+  "resolutions": {
+    "angular": "1.2.7"
   }
 }

@@ -1,0 +1,24 @@
+.main-content {
+  display: none;
+}
+
+.bad-browser {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bad-broswer h1,
+.bad-broswer h2 {
+  text-align: center;
+}
+
+.bad-broswer h1:before {
+  content: "We're sorry.";
+}
+
+.bad-broswer h2:before {
+  content: "Your browser appears to be... crappy.";
+}

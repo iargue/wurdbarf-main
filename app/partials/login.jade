@@ -1,7 +1,8 @@
-section.page.login-page
+section.page.login-view(ng-controller='LoginCtrl')
   h1 wurdbarf
+  h5(ng-bind='getGreeting()')
   
   .container
     input(placeholder='username')
     input(placeholder='password', type='password')
-    button login
+    button(ng-click="login()") login

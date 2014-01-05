@@ -6,7 +6,15 @@
 @import "partials/_home.less";
 
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-size: 100%;
   font-family: 'Open Sans', sans-serif;
+  background-image: url(http://farm4.staticflickr.com/3158/3096255994_0f1d5a1f3d_o.jpg);
 }
 
 input, textarea, button {
@@ -19,5 +27,35 @@ input, textarea, button {
   left: 0;
   height: 100%;
   width: 100%;
-  background-size: 100%;
+}
+
+.main-view {
+  transition: all 300ms;
+
+  &.ng-enter {
+    opacity: 0;
+    .login-view {
+    	-webkit-transform: translateY(-300px);
+    }
+  }
+  &.ng-enter-active {
+    opacity: 1;
+  }
+  &.ng-leave {
+    opacity: 1;
+  }
+  &.ng-leave-active {
+    opacity: 0;
+    .login-view {
+      h1, input, button {
+        -webkit-transform: translateY(300px);
+      }
+    }
+  }
+
+  .login-view {
+  	h1 {
+  	  transition: all 300ms;
+  	}
+  }
 }
